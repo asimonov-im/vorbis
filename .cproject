@@ -52,8 +52,13 @@
 								<option id="com.qnx.qcc.option.linker.debug.1277369211" name="Debug (-g)" superClass="com.qnx.qcc.option.linker.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.shared.1284432969" name="Shared (-shared)" superClass="com.qnx.qcc.option.linker.shared" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.security.1423777961" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
-								<option id="com.qnx.qcc.option.linker.libraryPaths.734978419" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths"/>
+								<option id="com.qnx.qcc.option.linker.libraryPaths.734978419" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Debug}&quot;"/>
+								</option>
 								<option id="com.qnx.qcc.option.linker.symbols.1323023876" name="Symbol options" superClass="com.qnx.qcc.option.linker.symbols" value="com.qnx.qcc.option.linker.symbols.all" valueType="enumerated"/>
+								<option id="com.qnx.qcc.option.linker.libraries.658925757" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="ogg"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.777149852" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -116,7 +121,12 @@
 							<tool id="com.qnx.qcc.tool.linker.27481333" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
 								<option id="com.qnx.qcc.option.linker.shared.1036885573" name="Shared (-shared)" superClass="com.qnx.qcc.option.linker.shared" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.security.1042218211" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
-								<option id="com.qnx.qcc.option.linker.libraryPaths.1447558873" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths"/>
+								<option id="com.qnx.qcc.option.linker.libraryPaths.1447558873" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Release}&quot;"/>
+								</option>
+								<option id="com.qnx.qcc.option.linker.libraries.646678699" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="ogg"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.114557937" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -173,7 +183,7 @@
 								<option id="com.qnx.qcc.option.compiler.qccoptions.999524401" name="QCC Options" superClass="com.qnx.qcc.option.compiler.qccoptions" valueType="stringList">
 									<listOptionValue builtIn="false" value="-fPIC"/>
 								</option>
-								<option id="com.qnx.qcc.option.compiler.profile.1877904340" superClass="com.qnx.qcc.option.compiler.profile" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.compiler.profile.1877904340" name="Build for Profiling (Call Count) (-p)" superClass="com.qnx.qcc.option.compiler.profile" value="true" valueType="boolean"/>
 								<inputType id="com.qnx.qcc.inputType.compiler.2112734540" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.1865182179" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
@@ -185,8 +195,13 @@
 								<option id="com.qnx.qcc.option.linker.profile2.1763140361" name="Build for Profiling (Function Instrumentation) (-lprofiling)" superClass="com.qnx.qcc.option.linker.profile2" value="false" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.shared.472805966" name="Shared (-shared)" superClass="com.qnx.qcc.option.linker.shared" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.security.1905556676" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
-								<option id="com.qnx.qcc.option.linker.libraryPaths.423939489" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths"/>
-								<option id="com.qnx.qcc.option.linker.profile.2113300803" superClass="com.qnx.qcc.option.linker.profile" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraryPaths.423939489" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Profile}&quot;"/>
+								</option>
+								<option id="com.qnx.qcc.option.linker.profile.2113300803" name="Build for Profiling (Call Count) (-p)" superClass="com.qnx.qcc.option.linker.profile" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraries.806034045" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="ogg"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.1090094197" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -255,6 +270,9 @@
 								<option id="com.qnx.qcc.option.linker.shared.1069376453" name="Shared (-shared)" superClass="com.qnx.qcc.option.linker.shared" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.security.250356330" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.654702537" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths"/>
+								<option id="com.qnx.qcc.option.linker.libraries.634614974" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="ogg"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.1562088410" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -320,6 +338,9 @@
 								<option id="com.qnx.qcc.option.linker.shared.1692541968" name="Shared (-shared)" superClass="com.qnx.qcc.option.linker.shared" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.security.1613153961" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.43289888" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths"/>
+								<option id="com.qnx.qcc.option.linker.libraries.343140568" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="ogg"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.696090567" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -387,6 +408,9 @@
 								<option id="com.qnx.qcc.option.linker.shared.144524002" name="Shared (-shared)" superClass="com.qnx.qcc.option.linker.shared" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.security.1264378045" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.1070109182" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths"/>
+								<option id="com.qnx.qcc.option.linker.libraries.1757077368" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="ogg"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.1400168398" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -454,6 +478,9 @@
 								<option id="com.qnx.qcc.option.linker.shared.909726092" name="Shared (-shared)" superClass="com.qnx.qcc.option.linker.shared" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.security.436650609" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.1149002042" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths"/>
+								<option id="com.qnx.qcc.option.linker.libraries.1274882647" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="ogg"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.713663917" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
